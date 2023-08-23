@@ -6,10 +6,9 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "auth": {
-    "webchat4865e8fe": {
+    "webchat0823a94b": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
-      "CreatedSNSRole": "string",
       "IdentityPoolId": "string",
       "IdentityPoolName": "string",
       "UserPoolArn": "string",

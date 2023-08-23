@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "webchat4865e8fe_identitypool_4865e8fe",
+    "identityPoolName": "webchat0823a94b_identitypool_0823a94b",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "webcha4865e8fe",
-    "userPoolName": "webchat4865e8fe_userpool_4865e8fe",
+    "resourceNameTruncated": "webcha0823a94b",
+    "userPoolName": "webchat0823a94b_userpool_0823a94b",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,15 +31,12 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "webcha4865e8fe_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "webcha0823a94b_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "4865e8fe",
-    "resourceName": "webchat4865e8fe",
+    "sharedId": "0823a94b",
+    "resourceName": "webchat0823a94b",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "usernameAttributes": [
-      "phone_number"
-    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

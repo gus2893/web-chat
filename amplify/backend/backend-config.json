@@ -7,7 +7,7 @@
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "webchat4865e8fe"
+          "resourceName": "webchat0823a94b"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authwebchat4865e8fe"
+              "userPoolId": "authwebchat0823a94b"
             }
           }
         }
@@ -26,7 +26,7 @@
     }
   },
   "auth": {
-    "webchat4865e8fe": {
+    "webchat0823a94b": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -42,9 +42,7 @@
           "EMAIL"
         ],
         "socialProviders": [],
-        "usernameAttributes": [
-          "PHONE_NUMBER"
-        ],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]

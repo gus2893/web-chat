@@ -10,11 +10,6 @@
       "StackName": "amplify-webchat-dev-120207",
       "StackId": "arn:aws:cloudformation:us-east-1:768159544086:stack/amplify-webchat-dev-120207/93d6d910-4297-11ee-ad8e-12a42d285a77",
       "AmplifyAppId": "d7r1ekj1l87sx"
-    },
-    "categories": {
-      "api": {
-        "webchat": {}
-      }
     }
   }
 }

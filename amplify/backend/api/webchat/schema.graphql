@@ -1,27 +1,22 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
-# input AMPLIFY {
-# 	globalAuthRule: AuthRule = { allow: public }
-# } # FOR TESTING ONLY!
-type Chat
-	@model
-	@auth(
-		rules: [
-			{
-				allow: groups
-				groups: ["Owner"]
-				operations: [create, update, read, delete]
-			}
-			{ allow: groups, groups: ["Member"], operations: [read] }
-		]
-	) {
+input AMPLIFY {
+	globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+type Discussion @model {
 	id: ID!
-	name: String!
-	owner: String!
+	title: String!
+	owner: String! @belongsTo
+	messages: [Messages] @hasMany
 }
 
-type Message @model @auth(rules: [{ allow: private }]) {
+type MessageBlock @model {
 	id: ID!
-	owner: String!
-	content: String!
+	messages: [Messages] @hasMany
+}
+
+type Message {
+	id: ID!
+	owner: String! @belongsTo
+	message: String
 }

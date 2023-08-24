@@ -1,23 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-webchat-dev-190751-authRole",
-      "UnauthRoleArn": "arn:aws:iam::171272060147:role/amplify-webchat-dev-190751-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::171272060147:role/amplify-webchat-dev-190751-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-webchat-dev-190751-deployment",
-      "UnauthRoleName": "amplify-webchat-dev-190751-unauthRole",
-      "StackName": "amplify-webchat-dev-190751",
-      "StackId": "arn:aws:cloudformation:us-east-2:171272060147:stack/amplify-webchat-dev-190751/e3015bc0-4209-11ee-96bd-025e0a44cdbf",
-      "AmplifyAppId": "d2prl3vjnxge0p"
-    },
-    "categories": {
-      "auth": {
-        "webchat0823a94b": {}
-      },
-      "api": {
-        "webchat": {}
-      }
+      "AuthRoleName": "amplify-webchat-dev-120207-authRole",
+      "UnauthRoleArn": "arn:aws:iam::768159544086:role/amplify-webchat-dev-120207-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::768159544086:role/amplify-webchat-dev-120207-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-webchat-dev-120207-deployment",
+      "UnauthRoleName": "amplify-webchat-dev-120207-unauthRole",
+      "StackName": "amplify-webchat-dev-120207",
+      "StackId": "arn:aws:cloudformation:us-east-1:768159544086:stack/amplify-webchat-dev-120207/93d6d910-4297-11ee-ad8e-12a42d285a77",
+      "AmplifyAppId": "d7r1ekj1l87sx"
     }
   }
 }

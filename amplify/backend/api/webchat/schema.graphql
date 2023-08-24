@@ -3,20 +3,22 @@
 input AMPLIFY {
 	globalAuthRule: AuthRule = { allow: public }
 } # FOR TESTING ONLY!
+type User @model {
+	id: ID!
+	name: String!
+	picture: String
+	discussions: [Discussion] @hasMany
+	messages: [Message] @hasMany
+}
 type Discussion @model {
 	id: ID!
 	title: String!
-	owner: String! @belongsTo
-	messages: [Messages] @hasMany
+	owner: User @belongsTo
+	messageBlock: [Message] @hasMany
 }
 
-type MessageBlock @model {
+type Message @model {
 	id: ID!
-	messages: [Messages] @hasMany
-}
-
-type Message {
-	id: ID!
-	owner: String! @belongsTo
-	message: String
+	owner: User @belongsTo
+	content: String!
 }

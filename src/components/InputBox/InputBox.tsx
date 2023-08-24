@@ -7,18 +7,18 @@ import { useState } from "react";
 const InputBox = () => {
 	const [message, setMessage] = useState<string>("");
 
-	const sendMessage = async () => {
-		const input = {};
-		try {
-			API.graphql({
-				authMode: "API_KEY",
-				query: createMessage,
-				variables: {
-					input: input,
-				},
-			});
-		} catch (error) {}
-	};
+	// const sendMessage = async () => {
+	// 	const input = {};
+	// 	try {
+	// 		API.graphql({
+	// 			authMode: "API_KEY",
+	// 			query: createMessage,
+	// 			variables: {
+	// 				input: input,
+	// 			},
+	// 		});
+	// 	} catch (error) {}
+	// };
 	return (
 		<div>
 			<input
@@ -26,7 +26,9 @@ const InputBox = () => {
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
 			/>
-			<button onClick={() => alert(message)}>Submit</button>
+			<button className="px-5 py-5" onClick={() => alert(message)}>
+				Submit
+			</button>
 		</div>
 	);
 };
